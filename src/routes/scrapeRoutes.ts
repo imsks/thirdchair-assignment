@@ -3,6 +3,6 @@ import { scrapeAndSave } from "../controllers/scrapeController"
 
 const router = Router()
 
-router.get("/scrape/:videoId", scrapeAndSave)
+router.get("/:videoId", scrapeAndSave)
 
 export default router

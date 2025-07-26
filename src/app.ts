@@ -2,13 +2,14 @@ import express from "express"
 import mongoose from "mongoose"
 import dotenv from "dotenv"
 import scrapeRoutes from "./routes/scrapeRoutes"
-
+import userRoutes from "./routes/userRoutes"
 dotenv.config()
 
 const app = express()
 app.use(express.json())
 
-app.use("/api", scrapeRoutes)
+app.use("/api/scrape", scrapeRoutes)
+app.use("/api/user", userRoutes)
 
 mongoose
     .connect(process.env.MONGODB_URI!)
