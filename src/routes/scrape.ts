@@ -1,5 +1,5 @@
 import { Router } from "express"
-import { scrapeAndSave } from "../controllers/scrapeController"
+import { scrapeAndSave } from "../controllers/scrape"
 
 const router = Router()
 

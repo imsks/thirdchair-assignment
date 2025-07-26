@@ -1,8 +1,8 @@
 import express from "express"
 import mongoose from "mongoose"
 import dotenv from "dotenv"
-import scrapeRoutes from "./routes/scrapeRoutes"
-import userRoutes from "./routes/userRoutes"
+import scrapeRoutes from "./routes/scrape"
+import userRoutes from "./routes/user"
 dotenv.config()
 
 const app = express()

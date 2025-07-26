@@ -1,5 +1,5 @@
 import { Router } from "express"
-import { fetchUserPosts, fetchUserSecUid } from "../controllers/userController"
+import { fetchUserPosts, fetchUserSecUid } from "../controllers/user"
 
 const router = Router()
 
