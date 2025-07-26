@@ -8,7 +8,7 @@ export const scrapeAndSave = async (req: Request, res: Response) => {
     try {
         const data = await fetchVideoDetails(videoId)
 
-        const item = data.data.itemInfo.itemStruct
+        const item = data.itemInfo.itemStruct
 
         const video = new Video({
             id: item.id,
